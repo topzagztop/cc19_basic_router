@@ -32,3 +32,14 @@ npm i react-router
 ```bash
 npm install zustand
 ```
+
+## Step 5 Fetch data
+```bash
+npm install axios
+```
+
+## Step 6 UI Dayisyui and Icon Lucide
+```bash 
+npm i -D daisyui@latest
+npm install lucide-react
+```
