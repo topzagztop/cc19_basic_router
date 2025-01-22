@@ -27,3 +27,8 @@ git push
 ```bash
 npm i react-router
 ```
+
+## Step 4 Global state with Zustand
+```bash
+npm install zustand
+```
