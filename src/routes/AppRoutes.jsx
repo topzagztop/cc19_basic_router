@@ -8,6 +8,8 @@ import Contact from "../pages/Contact";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import Recap from "../pages/Recap";
+import RecapUseState from "../pages/RecapUseState";
 
 function AppRoutes() {
   return (
@@ -20,8 +22,10 @@ function AppRoutes() {
                 <Route path="contact" element={<Contact />} />
                 <Route path="login" element={<Login />} />
                 <Route path="register" element={<Register />} />
+                <Route path="recap" element={<Recap />} />
+                <Route path="recap-usestate" element={<RecapUseState />} />
             </Route>
-            
+
             {/* Private */}
             <Route path="admin" element={<Layout />}>
                 <Route index element={<Dashboard />} />

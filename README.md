@@ -10,7 +10,7 @@ npm run dev
 ## Step 2 Create Push to Github
 ```bash
 git init
-git add.
+git add .
 git commit -m "init"
 git push
 ```
