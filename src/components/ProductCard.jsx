@@ -26,7 +26,8 @@ function ProductCard(props) {
                 <p className='text-2xl font-bold'>${price}</p>
                 <p>{description}</p>
                 <div className="card-actions justify-end mb-4">
-                    {tags.map(el => <div className="badge badge-outline">{el}</div>
+                    {tags.map(el => 
+                        <div key={el} className="badge badge-outline">{el}</div>
                     )}
                 </div>
                 <div className="card-actions justify-end">
