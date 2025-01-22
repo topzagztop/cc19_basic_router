@@ -10,7 +10,9 @@ function MyCart() {
   return (
     <div>
         <h1 className="text-4xl font-bold text-center my-6">My Cart</h1>
-        <button onClick={actionClear}>Clear</button>
+        <div className="flex justify-center items-center">
+            <button className="btn hover:bg-red-600 hover:text-white" onClick={actionClear}>Clear</button>
+        </div>
         <div className="flex flex-wrap gap-8 m-auto justify-around">
             {cart.map((product) => {
                 return <ProductCard

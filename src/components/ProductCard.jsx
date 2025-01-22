@@ -1,12 +1,13 @@
 // import React from 'react'
-import { ShoppingCart } from 'lucide-react';
+import { ShoppingCart, Trash2 } from 'lucide-react';
 import useProductStore from '../store/product-store';
 
 function ProductCard(props) {
 
     const { id, title, description, thumbnail, category, tags, price } = props.product
-    const {product} = props
+    const { product } = props
     const actionAddToCart = useProductStore((state) => state.actionAddToCart)
+    const actionRemoveProduct = useProductStore((state) => state.actionRemoveProduct)
 
     // console.log(props.product)
 
@@ -29,6 +30,11 @@ function ProductCard(props) {
                     )}
                 </div>
                 <div className="card-actions justify-end">
+                    <button 
+                        onClick={()=> actionRemoveProduct(id)}
+                        className='btn hover:bg-red-600 hover:text-white'>
+                        <Trash2 />
+                    </button>
                     <button 
                         onClick={()=>actionAddToCart(product)}
                         className="btn btn-primary">
